@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thyroid Disease Prediction using Machine Learning">
+    <title>Thyroid Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Thyroid Disease Prediction</h1>
+            <p>Accurately predict thyroid conditions using advanced machine learning algorithms.</p>
+        </header>
+
+        <form action="/predict" method="POST" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+            </select>
+            
+            <label for="smoking">Smoking:</label>
+            <select id="smoking" name="smoking">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            
+            <label for="hx_smoking">History of Smoking:</label>
+            <select id="hx_smoking" name="hx_smoking">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            
+            <label for="hx_radiotherapy">History of Radiotherapy:</label>
+            <select id="hx_radiotherapy" name="hx_radiotherapy">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            
+            <label for="thyroid_function">Thyroid Function:</label>
+            <select id="thyroid_function" name="thyroid_function">
+                <option value="Euthyroid">Euthyroid</option>
+                <option value="Subclinical Hypothyroidism">Subclinical Hypothyroidism</option>
+                <option value="Clinical Hypothyroidism">Clinical Hypothyroidism</option>
+                <option value="Subclinical Hyperthyroidism">Subclinical Hyperthyroidism</option>
+                <option value="Clinical Hyperthyroidism">Clinical Hyperthyroidism</option>
+            </select>
+            
+            <label for="physical_examination">Physical Examination:</label>
+            <select id="physical_examination" name="physical_examination">
+                <option value="Single nodular goiter-left">Single nodular goiter-left</option>
+                <option value="Normal">Normal</option>
+                <option value="Multinodular goiter">Multinodular goiter</option>
+                <option value="Single nodular goiter-right">Single nodular goiter-right</option>
+                <option value="Diffuse goiter">Diffuse goiter</option>
+            </select>
+            
+            <label for="adenopathy">Adenopathy:</label>
+            <select id="adenopathy" name="adenopathy">
+                <option value="No">No</option>
+                <option value="Right">Right</option>
+                <option value="Bilateral">Bilateral</option>
+                <option value="Left">Left</option>
+                <option value="Extensive">Extensive</option>
+            </select>
+            
+            <label for="pathology">Pathology:</label>
+            <select id="pathology" name="pathology">
+                <option value="Papillary">Papillary</option>
+                <option value="Follicular">Follicular</option>
+                <option value="Micropapillary">Micropapillary</option>
+                <option value="Hurthel cell">Hurthel cell</option>
+            </select>
+            
+            <label for="response">Response:</label>
+            <select id="response" name="response">
+                <option value="Excellent">Excellent</option>
+                <option value="Structural Incomplete">Structural Incomplete</option>
+                <option value="Indeterminate">Indeterminate</option>
+                <option value="Biochemical Incomplete">Biochemical Incomplete</option>
+            </select>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+
+            <div id="result" class="result-box">
+                <h2>Prediction Result</h2>
+                <p id="prediction-output">Your prediction will appear here.</p>
+            </div>
+            <div id="result">
+                <h3> {{prediction_text}}</h3>
+                
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Thyroid Prediction System | Powered by AI & ML</p>
+            <b> author : <a href="https://www.linkedin.com/in/aziz-ashfak-27353b262/">Aziz Ashfak</a></b><br>
+            <b>Gmail:</b> azizashfak@gmail.com
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
