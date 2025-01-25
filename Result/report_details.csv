@@ -1,0 +1,58 @@
+LogisticRegression,SGDClassifier,RandomForestClassifier,AdaBoostClassifier,GradientBoostingClassifier,BaggingClassifier,CatBoostClassifier
+"              precision    recall  f1-score   support
+
+          No       0.97      0.98      0.97        58
+         Yes       0.94      0.89      0.92        19
+
+    accuracy                           0.96        77
+   macro avg       0.96      0.94      0.95        77
+weighted avg       0.96      0.96      0.96        77
+","              precision    recall  f1-score   support
+
+          No       0.97      0.98      0.97        58
+         Yes       0.94      0.89      0.92        19
+
+    accuracy                           0.96        77
+   macro avg       0.96      0.94      0.95        77
+weighted avg       0.96      0.96      0.96        77
+","              precision    recall  f1-score   support
+
+          No       0.98      1.00      0.99        58
+         Yes       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+","              precision    recall  f1-score   support
+
+          No       0.98      0.97      0.97        58
+         Yes       0.90      0.95      0.92        19
+
+    accuracy                           0.96        77
+   macro avg       0.94      0.96      0.95        77
+weighted avg       0.96      0.96      0.96        77
+","              precision    recall  f1-score   support
+
+          No       0.98      0.98      0.98        58
+         Yes       0.95      0.95      0.95        19
+
+    accuracy                           0.97        77
+   macro avg       0.97      0.97      0.97        77
+weighted avg       0.97      0.97      0.97        77
+","              precision    recall  f1-score   support
+
+          No       0.98      1.00      0.99        58
+         Yes       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+","              precision    recall  f1-score   support
+
+          No       0.98      1.00      0.99        58
+         Yes       1.00      0.95      0.97        19
+
+    accuracy                           0.99        77
+   macro avg       0.99      0.97      0.98        77
+weighted avg       0.99      0.99      0.99        77
+"
