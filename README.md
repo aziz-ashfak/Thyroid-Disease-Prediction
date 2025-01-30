@@ -1,8 +1,6 @@
 # Thyroid-Disease-Prediction
 
 # Project Overview
-This project aims to find out the flight price by using different model. It consists of various components including datasets, source code, static files, templates, and analysis results etc.
-
 ## Directory Structure
 ```
 ├── .github
