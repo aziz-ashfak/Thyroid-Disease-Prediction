@@ -130,7 +130,7 @@ https://www.kaggle.com/code/azizashfak/thyroid-disease-prediction-accuracy-98-7
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/AzizAshfak/Thyroid-Disease-Prediction.git>
+   git clone <https://github.com/aziz-ashfak/Thyroid-Disease-Prediction.git>
    ```
 2. Navigate to the project directory:
    ```bash
