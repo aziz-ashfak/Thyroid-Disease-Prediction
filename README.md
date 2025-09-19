@@ -1,8 +1,6 @@
 # Thyroid-Disease-Prediction
 
 # Project Overview
-This project aims to find out the flight price by using different model. It consists of various components including datasets, source code, static files, templates, and analysis results etc.
-
 ## Directory Structure
 ```
 ├── .github
@@ -132,7 +130,7 @@ https://www.kaggle.com/code/azizashfak/thyroid-disease-prediction-accuracy-98-7
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/AzizAshfak/Thyroid-Disease-Prediction.git>
+   git clone <https://github.com/aziz-ashfak/Thyroid-Disease-Prediction.git>
    ```
 2. Navigate to the project directory:
    ```bash
@@ -171,5 +169,5 @@ This project is licensed under the [LICENSE] file included in the repository.
 
 👤 **Aziz Ashfak**  
 📧 Email: [azizashfak@gmail.com](mailto:azizashfak@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/aziz-ashfak](https://www.linkedin.com/in/aziz-ashfak-27353b262/)  
-🐙 GitHub: [github.com/AzizAshfak](https://github.com/AzizAshfak/)  
+🔗 LinkedIn: [linkedin.com/in/aziz-ashfak](https://www.linkedin.com/in/aziz-ashfak1/)  
+🐙 GitHub: [github.com/aziz-ashfak](https://github.com/aziz-ashfak/)  
