@@ -1,142 +1,85 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* =========================
+   Body & Background
+========================= */
+body.bg-medical {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #333;
-    padding: 20px;
-}
-
-/* Wrapper */
-.wrapper {
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    overflow: hidden;
-    padding: 30px;
-    animation: fadeIn 0.8s ease-in;
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 600;
-}
-
-header p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Form Container */
-.container {
-    padding: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-input, select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
+/* =========================
+   Glass Card
+========================= */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease;
 }
 
-input:focus, select:focus {
-    border-color: #6a11cb;
-    outline: none;
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
-/* Button */
-.btn {
-    width: 100%;
-    padding: 15px;
-    background: #6a11cb;
-    color: white;
-    font-size: 1.2rem;
+/* =========================
+   Form Inputs
+========================= */
+input, select {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 16px 20px;
+    color: #fff;
+    box-shadow: inset 5px 5px 18px rgba(0,0,0,0.35), inset -5px -5px 15px rgba(255,255,255,0.1);
+    transition: all 0.4s ease;
 }
 
-.btn:hover {
-    background: #2575fc;
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 5px 5px 20px rgba(0,0,0,0.45), inset -5px -5px 18px rgba(255,255,255,0.15);
 }
 
-/* Result Box */
+/* =========================
+   Buttons
+========================= */
+.btn-gradient {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.btn-gradient:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   Result Box
+========================= */
 .result-box {
-    margin-top: 30px;
-    padding: 20px;
-    background: #e3f2fd;
-    border-left: 5px solid #6a11cb;
-    border-radius: 8px;
-    display: none;
+    background: rgba(255, 255, 255, 0.12);
+    border-left: 6px solid #00c6ff;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    animation: fadeIn 0.6s ease-in;
 }
 
-.result-box h2 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* =========================
+   Animations
+========================= */
+@keyframes slideFade {
+    0% { opacity: 0; transform: translateY(-40px);}
+    100% { opacity: 1; transform: translateY(0);}
 }
 
-.result-box p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #6200ea;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 1.4rem;
-    color: #e3f2fd;
-}
-
-/* Animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-15px);}
+    to { opacity: 1; transform: translateY(0);}
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    input, select, .btn {
-        font-size: 1rem;
-    }
-}
